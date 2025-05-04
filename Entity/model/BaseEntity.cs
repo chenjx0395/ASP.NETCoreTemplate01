@@ -4,10 +4,10 @@
     {
         public TKey Id { get; set; }
 
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 
-        public DateTime EditDate { get; set; }
+        public DateTime EditDate { get; set; }  = DateTime.UtcNow;
 
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }

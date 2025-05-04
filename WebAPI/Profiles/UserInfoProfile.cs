@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Entity.model;
+using Entity.Request.User;
 using Entity.vo;
 
 namespace WebAPI.Profiles
@@ -9,6 +10,7 @@ namespace WebAPI.Profiles
         public UserInfoProfile()
         {
             CreateMap<UserInfo, UserInfoVo>();
+            CreateMap<RegistrationForm, UserInfo>();
         }
     }
 }
